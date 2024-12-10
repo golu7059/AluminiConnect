@@ -6,6 +6,10 @@ const alumniDetailsSchema = new mongoose.Schema({
     ref: "Student",
     required: true,
   },
+  company: {
+    type: String,
+    required: true,
+  },
   currentRole: {
     type: String,
     required: true,

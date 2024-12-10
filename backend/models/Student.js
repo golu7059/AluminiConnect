@@ -26,7 +26,6 @@ const studentSchema = new mongoose.Schema({
   alumniDetailsId: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "AlumniDetails",
-    required: true,
   },
 });
 

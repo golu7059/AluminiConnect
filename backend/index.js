@@ -33,6 +33,7 @@ mongoose
   });
 
 app.use("/api/auth", authRouter);
+app.use("/api/onbording", require("./routes/onbordingRoutes"));
 app.use("/api/college", require("./routes/collegeRoutes"));
 
 app.get("/", (req, res) => {

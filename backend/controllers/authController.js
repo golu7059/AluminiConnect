@@ -34,7 +34,7 @@ const signup = async (req, res) => {
   ) {
     return res.status(400).json({
       message:
-        "All fields are required. email, password, firstName, lastName, address, phoneNumber, gender, dateOfBirth",
+        "All fields are required. email, password, firstName, lastName, role, address, phoneNumber, gender, dateOfBirth",
     });
   }
 

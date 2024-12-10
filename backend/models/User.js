@@ -34,8 +34,7 @@ const userSchema = new mongoose.Schema(
     },
     role: {
       type: String,
-      enum: ["Admin", "User", "CollegeAdmin"],
-      required: true,
+      enum: ["Admin", "Student", "CollegeAdmin"],
       default: "Student",
     },
     gender: {
@@ -52,10 +51,6 @@ const userSchema = new mongoose.Schema(
         date.setHours(0, 0, 0, 0);
         return date;
       },
-    },
-    collegeId: {
-      type: String,
-      required: true,
     },
   },
   { timestamps: true, collection: "User-Alumini" }
