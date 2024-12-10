@@ -26,6 +26,7 @@ const userSchema = new mongoose.Schema(
     },
     lastName: {
       type: String,
+      required: true,
       default: "",
     },
     phoneNumber: {
@@ -33,12 +34,14 @@ const userSchema = new mongoose.Schema(
     },
     role: {
       type: String,
-      enum: ["Admin", "User", "Farmer"],
-      default: "User",
+      enum: ["Admin", "User", "CollegeAdmin"],
+      required: true,
+      default: "Student",
     },
     gender: {
       type: String,
       enum: ["Male", "Female", "Other", "Prefer not to say"],
+      required: true,
       default: "Prefer not to say",
     },
     dateOfBirth: {
@@ -50,8 +53,12 @@ const userSchema = new mongoose.Schema(
         return date;
       },
     },
+    collegeId: {
+      type: String,
+      required: true,
+    },
   },
-  { timestamps: true, collection: "AluminiConnect" }
+  { timestamps: true, collection: "User-Alumini" }
 );
 
 const User = mongoose.model("User", userSchema);

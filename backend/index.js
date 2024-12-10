@@ -33,7 +33,7 @@ mongoose
   });
 
 app.use("/api/auth", authRouter);
-// app.use("/api/profile", profileRouter);
+app.use("/api/college", require("./routes/collegeRoutes"));
 
 app.get("/", (req, res) => {
   res.send("Server is running");
