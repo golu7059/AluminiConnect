@@ -5,7 +5,7 @@ const {
   signin,
   forgotPassword,
   resetPassword,
-} = require("../controllers/authController");
+} = require("../controllers/authController.js");
 const passport = require("passport");
 const dotenv = require("dotenv");
 dotenv.config();

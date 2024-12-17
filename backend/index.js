@@ -5,6 +5,7 @@ const dotenv = require("dotenv");
 const authRouter = require("./routes/authRoutes.js");
 // const profileRouter = require("./routes/profileRoutes.js");
 const passport = require("passport");
+const onboardingRoutes = require("./routes/onboardingRoutes.js");
 
 dotenv.config();
 
@@ -33,8 +34,8 @@ mongoose
   });
 
 app.use("/api/auth", authRouter);
-app.use("/api/onbording", require("./routes/onbordingRoutes"));
-app.use("/api/college", require("./routes/collegeRoutes"));
+app.use("/api/onboarding", onboardingRoutes);
+app.use("/api/college", require("./routes/collegeRoutes.js"));
 
 app.get("/", (req, res) => {
   res.send("Server is running");

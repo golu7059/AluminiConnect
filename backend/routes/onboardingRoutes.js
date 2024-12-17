@@ -4,8 +4,8 @@ const {
   assignRole,
   createStudentProfile,
   createAlumniProfile,
-} = require("../controllers/OnboardingController");
-const auth = require("../middlewares/auth");
+} = require("../controllers/OnboardingController.js");
+const auth = require("../middlewares/auth.js");
 
 onboardingRouter.post("/assign-role", auth, assignRole);
 onboardingRouter.post("/student-profile", auth, createStudentProfile);
