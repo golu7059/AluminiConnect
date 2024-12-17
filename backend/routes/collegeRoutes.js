@@ -1,7 +1,7 @@
 const express = require("express");
 
 const collegeRouter = express.Router();
-const auth = require("../middlewares/auth");
+const auth = require("../middlewares/auth.js");
 
 const {
   createCollege,
@@ -9,7 +9,7 @@ const {
   getCollegeById,
   updateCollege,
   deleteCollege,
-} = require("../controllers/collegeController");
+} = require("../controllers/collegeController.js");
 
 collegeRouter.post("/", auth, createCollege);
 collegeRouter.get("/", auth, getAllColleges);

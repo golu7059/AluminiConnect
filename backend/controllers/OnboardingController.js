@@ -1,6 +1,6 @@
-const User = require("../models/User");
-const Student = require("../models/Student");
-const AlumniDetails = require("../models/AlumniDetails");
+const User = require("../models/User.js");
+const Student = require("../models/Student.js");
+const AlumniDetails = require("../models/AlumniDetails.js");
 
 // TODO: Remove Password from response
 exports.assignRole = async (req, res) => {
