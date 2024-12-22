@@ -1,13 +1,16 @@
-import './App.css'
-import HomePage from './pages/Home'
+import "./App.css";
+import { Routes, Route } from "react-router-dom";
+
+import HomePage from "./pages/Home";
 
 function App() {
   return (
     <>
-        <h1>Alumni Frontend</h1>   
-        <HomePage/>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
