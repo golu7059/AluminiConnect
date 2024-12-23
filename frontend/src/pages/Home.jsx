@@ -1,6 +1,6 @@
 import { FaGraduationCap, FaHandshake, FaNetworkWired } from "react-icons/fa";
 import { GoArrowRight } from "react-icons/go";
-
+import WhyAluminiConnect from "../components/WhyAluminiConnect.jsx";
 
 const Home = () => {
   return (
@@ -60,91 +60,7 @@ const Home = () => {
           </section>
         </main>
       </div>
-      <div className="reveal">
-        <section className="container mx-auto px-4 py-8">
-          <h2 className="text-3xl font-extrabold text-center mb-8">
-            Why Alumni Connect?
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white rounded-lg shadow-lg p-6">
-              <div className="flex items-center justify-center mb-4 text-blue-400 text-4xl">
-                <FaGraduationCap />
-              </div>
-              <h3 className="text-2xl font-semibold mb-2 text-gray-800">
-                Stay Connected
-              </h3>
-              <p className="text-gray-600">
-                Stay connected with your alma mater and never lose touch with
-                your college friends.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-lg shadow-lg p-6">
-              <div className="flex items-center justify-center mb-4 text-blue-400 text-4xl">
-                <FaHandshake />
-              </div>
-              <h3 className="text-2xl font-semibold mb-2 text-gray-800">
-                Network with Alumni
-              </h3>
-              <p className="text-gray-600">
-                Network with fellow alumni and explore new opportunities.
-              </p>
-            </div>
-
-            <div className="bg-white rounded-lg shadow-lg p-6">
-              <div className="flex items-center justify-center mb-4 text-blue-400 text-4xl">
-                <FaNetworkWired />
-              </div>
-              <h3 className="text-2xl font-semibold mb-2 text-gray-800">
-                Attend Events
-              </h3>
-              <p className="text-gray-600">
-                Engage in networking events and stay updated with the latest
-                happenings.
-              </p>
-            </div>
-          </div>
-        </section>
-      </div>
-      <div className="reveal">
-        <section className="container mx-auto px-4 py-8">
-          <h2 className="text-3xl font-extrabold text-center mb-8">
-            Alumni Connect Features
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div className="bg-white rounded-lg shadow-lg p-6">
-              <div className="flex items-center justify-center mb-4 text-blue-400 text-4xl">
-                <FaGraduationCap />
-              </div>
-              <h3 className="text-2xl font-semibold mb-2 text-gray-800">
-                Alumni Registration
-              </h3>
-              <p className="text-gray-600">
-                Register as an Alumni and connect with fellow alumni.
-              </p>
-            </div>
-          </div>
-        </section>
-      </div>
-      <div className="container mx-auto px-4 py-8">
-        <h2 className="text-3xl font-extrabold text-center mb-8">
-          Alumni Connect Benefits
-        </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          <div className="bg-white rounded-lg shadow-lg p-6">
-            <div className="flex items-center justify-center mb-4 text-blue-400 text-4xl">
-              <FaGraduationCap />
-            </div>
-            <h3 className="text-2xl font-semibold mb-2 text-gray-800">
-              Stay Connected
-            </h3>
-            <p className="text-gray-600">
-              Stay connected with your alma mater and never lose touch with your
-              college friends.
-            </p>
-          </div>
-        </div>
-      </div>
+      <WhyAluminiConnect/>
     </>
   );
 };
